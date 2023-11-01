@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Trabalhando com o OpenStreetMap
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-card id="map">
+
+  </ion-card>
+
+  <ion-card>
+    <ion-button (click)="getLocalizacao()" expand="block">Get Localization</ion-button>
+    <ion-item>
+      <ion-label>Latitude</ion-label>
+      <ion-badge color="danger" slot="end"> {{lat}} </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Longitude</ion-label>
+      <ion-badge color="danger" slot="end"> {{lon}} </ion-badge>
+    </ion-item>
+  </ion-card>
